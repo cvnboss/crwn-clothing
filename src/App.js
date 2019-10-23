@@ -32,7 +32,7 @@ class App extends Component {
               id: snapshot.id,
               ...snapshot.data(),
             },
-          }, () => console.log(this.state.currentUser));
+          });
         });
       } else {
         this.setState({
